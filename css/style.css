@@ -218,6 +218,38 @@ body {
   border: 3px solid #ccc;
 }
 
+.main_header_logo:hover {
+  fill: #998675;
+}
+
+.main_header_logo:hover .main_header_logo_span {
+  color: #998675;
+}
+
+.main_header_logo:active {
+  fill: #ccc;
+}
+
+.main_header_logo:active .main_header_logo_span {
+  color: #ccc;
+}
+
+.but_switch_left:hover {
+  border-color: #998675;
+}
+
+.but_switch_right:hover {
+  border-color: #998675;
+}
+
+.but_switch_left:active {
+  border-color: #ccc;
+}
+
+.but_switch_right:active {
+  border-color: #ccc;
+}
+
 .main_header_pagination {
   width: 1920px;
   display: -webkit-box;
@@ -246,6 +278,9 @@ body {
   background: transparent;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+}
+.main_header_pagination_link:active {
+  background: #919194;
 }
 
 .container {
