@@ -19,10 +19,31 @@
 	box-sizing: border-box
 	margin: 70px 0 0 0
 
+=but_jump()
+	font-family: $font_raleway
+	font-size: 14px
+	line-height: 23px
+	font-weight: 800
+	text-transform: uppercase
+	color: #fff
+	text-decoration: none
+	display: block
+	width: 170px
+	height: 53px
+	background-color: #998675
+	border-radius: 3px
+	box-sizing: border-box
+	text-align: center
+	padding: 14px 0 0 0
+	border: 2px solid #998675
+	margin: 0 auto 310px
+
+
 $width: 1920px
 $margin_center: 0 auto
 $font_raleway: raleway-regular 
 $font_montserrat: montserrat-regular 
+$padding_site: 80px 400px 0
 
 
 body 
@@ -156,33 +177,17 @@ body
 		transform: rotate(-135deg)
 		margin: 70px 0 0 470px
 	.but_jump
-		font-family: $font_raleway
-		font-size: 14px
-		line-height: 23px
-		font-weight: 800
-		text-transform: uppercase
-		color: #fff
-		text-decoration: none
-		display: block
-		width: 170px
-		height: 53px
-		background-color: #998675
-		border-radius: 3px
-		box-sizing: border-box
-		text-align: center
-		padding: 14px 0 0 0
-		border: 2px solid #998675
-		margin: 0 auto 310px
+		+but_jump()
 
 	.but_jump:hover 
-		background-color: transparent
-		color: #998675
-		border: 2px solid #998675
+	background-color: transparent
+	color: #998675
+	border: 2px solid #998675
 
 	.but_jump:active 
-		background-color: #ccc
-		color: #fff
-		border: 3px solid #ccc
+	background-color: #ccc
+	color: #fff
+	border: 3px solid #ccc
 
 .main_header_logo:hover 
 	fill: #998675
@@ -235,12 +240,11 @@ body
 .container
 	width: $width
 	margin: $margin_center
-	padding: 0 367px 0
 	box-sizing: border-box
 .web_icons 
 	min-height: 370px
 	display: flex
-	padding: 80px 0 0 0
+	padding: $padding_site
 	box-sizing: border-box
 
 	&_link
@@ -294,5 +298,98 @@ body
 	
 	&_link:active:after
 		background-color: #484642
+
+
+.waxom_realiz
+	min-height: 700px
+	padding: $padding_site
+	box-sizing: border-box
+	background-color: #fbfaf8
+	width: $width
+	
+	&_title
+		font-family: $font_raleway
+		font-size: 30px
+		line-height: 1.2
+		font-weight: 600
+		color: #555555
+		text-align: center
+		display: block
+		margin: 0 0 25px 0
+
+	&_txt
+		font-family: $font_montserrat
+		font-size: 16px
+		line-height: 28px
+		font-weight: 300
+		color: #8c8c8c
+		text-align: center
+		margin: 0 auto 40px
+		max-width: 757px
+
+	&_expl
+		position: relative
+		display: flex
+		justify-content: center
+		margin: 0 -30px
+		align-items: flex-end
+
+.img_1
+	z-index: 1
+	position: absolute
+	left: 0
+
+.img_2
+	z-index: 2
+	position: relative
+
+.img_3
+	z-index: 1
+	position: absolute
+	right: 0
+
+.img_1:hover 
+	z-index: 3
+
+.img_3:hover 
+	z-index: 2
+
+.aside_waxom
+	padding: 40px 400px
+	box-sizing: border-box
+	background: linear-gradient(to right bottom, #211b19, #4e3427)
+	display: flex
+	justify-content: space-between
+
+	&_title
+		font-family: $font_raleway
+		font-size: 28px
+		line-height: 1.2
+		font-weight: 400
+		color: #ffffff
+
+	&_title span
+		color: #c7b299
+
+	&_txt
+		font-family: $font_montserrat
+		font-size: 18px
+		line-height: 1.2
+		font-weight: 300
+		color: #615855
+		margin: 0
+
+	&_button
+		+but_jump()
+		margin: 0
+		&:hover 
+			background-color: transparent
+			color: #998675
+			border: 2px solid #998675
+
+		&:active 
+			background-color: #ccc
+			color: #fff
+			border: 3px solid #ccc
 
 
