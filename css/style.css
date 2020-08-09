@@ -15,12 +15,6 @@ body {
   width: 1920px;
   min-height: 1024px;
   background: url(../img/header_bg.jpg) no-repeat;
-  background-color: transparent;
-  color: #998675;
-  border: 2px solid #998675;
-  background-color: #ccc;
-  color: #fff;
-  border: 3px solid #ccc;
 }
 .main_header_section {
   display: -webkit-box;
@@ -212,6 +206,16 @@ body {
   padding: 14px 0 0 0;
   border: 2px solid #998675;
   margin: 0 auto 310px;
+}
+.main_header .but_jump:hover {
+  background-color: transparent;
+  color: #998675;
+  border: 2px solid #998675;
+}
+.main_header .but_jump:active {
+  background-color: #ccc;
+  color: #fff;
+  border: 3px solid #ccc;
 }
 
 .main_header_logo:hover {
