@@ -247,3 +247,75 @@ body {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
+
+.container {
+  width: 1920px;
+  margin: 0 auto;
+  padding: 0 367px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.web_icons {
+  min-height: 370px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 80px 0 0 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.web_icons_link {
+  display: block;
+  text-decoration: none;
+}
+.web_icons_link_svg {
+  fill: #555555;
+  display: block;
+  margin: 0 auto 29px;
+}
+.web_icons_link_title {
+  display: block;
+  font-family: raleway-regular;
+  font-size: 22px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #555555;
+  text-align: center;
+  margin: 0 0 19px;
+}
+.web_icons_link_txt {
+  font-family: montserrat-regular;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #8c8c8c;
+  text-align: center;
+  margin: 0 0 30px 0;
+}
+.web_icons_link:after {
+  content: "";
+  display: block;
+  background-color: #f1eee9;
+  height: 3px;
+  width: 70px;
+  margin: 0 auto;
+}
+.web_icons_link:hover .web_icons_link_svg {
+  fill: #c7b299;
+}
+.web_icons_link:hover .web_icons_link_title {
+  color: #c7b299;
+}
+.web_icons_link:hover:after {
+  background-color: #c7b299;
+}
+.web_icons_link:active .web_icons_link_svg {
+  fill: #484642;
+}
+.web_icons_link:active .web_icons_link_title {
+  color: #484642;
+}
+.web_icons_link:active:after {
+  background-color: #484642;
+}
