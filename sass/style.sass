@@ -835,21 +835,25 @@ body
 			font-weight: 300
 			color: #c7b299
 			text-decoration: none
+			position: relative
 		
 		&_link:after
 			content: ""
 			display: block
-			background: #c7b299
-			border: 1px solid #c7b299
 			width: 0
 			height: 0
+			border-top: 3px solid transparent
+			border-bottom: 3px solid transparent
+			border-left: 5px solid #c7b299
+			top: 7px
+			left: 85px
+			position: absolute
 			
-
-
 	
 	&_bt_wrp
 		display: flex
 		justify-content: center
+		margin: 0 0 80px 0
 
 	&_bt_left
 		width: 22px
@@ -911,5 +915,235 @@ body
 	border-color: #362f2d
 
 .posts_items_link:hover
+	color: #fff
+
+.posts_items_link:active
+	color: #c7b299
+
+.posts_bt_left:hover
+	border-color: #d1d1d1
+
+.posts_bt_left:active
+	border-color: #c7b299
+
+.posts_bt_left:hover .posts_bt_left:after
+	border-right: 1px solid #c7b299
+	border-bottom: 1px solid #c7b299
+
+.posts_bt_right:hover
+	border-color: #d1d1d1
+
+.posts_bt_right:active
+	border-color: #c7b299
+
+.logos_partner
+	padding: 140px 406px
+	background: url(../img/bg_photo_logo.jpg) no-repeat
+	background-size: cover
+	max-height: 489px
+	width: 100%
+	box-sizing: border-box
+	display: flex
+	justify-content: space-between
+	align-items: center
+	
+	&_img
+		display: block
+
+.main_footer
+	width: 100%
+	max-height: 619px
+
+	&_part_1
+		width: 100%
+		max-height: 508px
+		background: #191919
+		padding: 80px 376px
+		box-sizing: border-box
+		display: flex
+		justify-content: space-between
+
+		&_logo
+			max-width: 258px
+			&_link
+				text-decoration: none
+				display: flex
+				margin: 0 0 16px 0
+			&_svg
+				fill: #fff
+			&_span
+				font-family: $font_raleway
+				font-size: 34px
+				line-height: 1.2
+				font-weight: 400
+				letter-spacing: -0.04em
+				color: #fff
+				margin: 4px 0 0 0
+
+			&_txt
+				font-family: $font_montserrat
+				font-size: 14px
+				line-height: 24px
+				font-weight: 300
+				color: #555555
+				margin: 0 0 33px 0
+
+			&_link_2
+				font-family: $font_montserrat
+				font-size: 14px
+				line-height: 20px
+				font-weight: 300
+				color: #fff
+				text-decoration: none
+				position: relative
+			&_link_2:hover
+				color: #998675
+			&_link_2:active
+				color: #fff
+			&_link_2:after
+				content: ""
+				display: block
+				width: 0
+				height: 0
+				border-top: 3px solid transparent
+				border-bottom: 3px solid transparent
+				border-left: 5px solid #fff
+				top: 7px
+				left: 85px
+				position: absolute
 
 
+		&_title
+			font-family: $font_raleway
+			font-size: 24px
+			line-height: 1.2
+			font-weight: 700
+			color: #fff
+			margin: 13px 0 33px 0
+		&_posts
+			max-width: 270px
+			
+			&_txt_wrp
+				margin: 0 0 19px 0
+				display: block
+				text-decoration: none
+
+			&_txt_wrp:after
+				content: ""
+				display: block
+				width: 270px
+				height: 2px
+				background-color: #252525
+			&_txt_wrp:last-child:after
+				display: none
+			&_txt_subtitle
+				font-family: $font_montserrat
+				font-size: 12px
+				line-height: 20px
+				font-weight: 300
+				color: #363636
+				margin: 0 0 10px 0 
+			&_txt
+				font-family: $font_montserrat
+				font-size: 14px
+				line-height: 20px
+				font-weight: 300
+				color: #555555
+				margin: 0 0 21px 0
+		&_twitter
+			max-width: 270px
+			&_txt_wrp
+				margin: 0 0 19px 0
+
+			&_txt_wrp:after
+				content: ""
+				display: block
+				width: 270px
+				height: 2px
+				background-color: #252525
+				margin: 21px 0 0 0
+
+			&_txt_wrp:last-child:after
+				display: none
+
+			&_txt
+				font-family: $font_montserrat
+				font-size: 14px
+				line-height: 20px
+				font-weight: 300
+				color: #555555
+				margin: 0
+			&_txt_subtitle
+				font-family: $font_montserrat
+				font-size: 12px
+				line-height: 20px
+				font-weight: 300
+				color: #363636
+				margin: 0 0 21px 0
+				display: block
+		&_widget
+			max-width: 272px
+	&_part_2
+		padding: 45px 376px 52px 
+		box-sizing: border-box
+		background-color: #111
+		width: 100%
+		max-height: 111px
+		display: flex
+		justify-content: space-between
+
+		&_wrp
+
+		&_txt
+			font-family: $font_montserrat
+			font-size: 13px
+			line-height: 20px
+			font-weight: 300
+			color: #555555
+			margin: 0
+		&_main_link
+			color: #959595
+		&_main_link:hover
+			color: #c7b299
+		&_link:hover
+			color: #c7b299
+
+		&_main_link:active
+			color: #959595
+		&_link:active
+			color: #555555
+
+.footer_twitter
+	color: #00bff3
+
+.footer_twitter:hover
+	color: #959595
+
+.footer_twitter:active
+	color: #00bff3
+
+
+.main_footer_part_1_logo_link:hover .main_footer_part_1_logo_svg
+	fill: #998675
+
+.main_footer_part_1_logo_link:hover .main_footer_part_1_logo_span
+	color: #998675
+
+.main_footer_part_1_logo_link:active .main_footer_part_1_logo_svg
+	fill: #ccc
+
+.main_footer_part_1_logo_link:active .main_footer_part_1_logo_span
+	color: #ccc
+
+.main_footer_part_1_posts_txt_wrp:hover .main_footer_part_1_posts_txt_subtitle
+	color: #fff
+
+.main_footer_part_1_posts_txt_wrp:hover .main_footer_part_1_posts_txt
+	color: #c7b299
+
+
+.main_footer_part_1_posts_txt_wrp:active .main_footer_part_1_posts_txt_subtitle
+	color: #363636
+
+.main_footer_part_1_posts_txt_wrp:active .main_footer_part_1_posts_txt
+	color: #555
